@@ -1,0 +1,79 @@
+body{
+    /* ROXINHO MANEIRO  */
+    background-color: rgb(7, 7, 19);
+    /* background-color: rgb(48, 56, 65); */
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b9fc7b;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-header{
+    
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 45px; */
+    width: 100%;
+    height: 70px;
+    /* ROXINHO MANEIRO */
+    background-color: rgb(26, 26, 70); 
+    /* background-color: rgb(68, 83, 94); */
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* .navbar-header a{
+    width: 150px;
+} */
+.button-nav{
+    font-size: 22px;
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b9fc7b;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sobre-mim{
+    display: flex;
+    border-radius: 6%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 45px; */
+    width: 500px;
+    height: 250px;
+    /* ROXINHO MANEIRO */
+    background-color: rgb(53, 53, 122); 
+    /* background-color: rgb(68, 83, 94); */
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
