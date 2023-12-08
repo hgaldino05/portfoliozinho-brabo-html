@@ -59,21 +59,21 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.sobre-mim{
-    display: flex;
+/* .sobre-mim{ */
+    /* display: flex;
     border-radius: 6%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* gap: 45px; */
-    width: 500px;
-    height: 250px;
+    /* width: 500px;
+    height: 250px; */
     /* ROXINHO MANEIRO */
-    background-color: rgb(53, 53, 122); 
+    /* background-color: rgb(53, 53, 122);  */
     /* background-color: rgb(68, 83, 94); */
-    margin: 0;
-    padding: 0 ;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+    /* margin: 0; */
+    /* padding: 0 ; */
+    /* box-sizing: border-box; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
+/* } */
