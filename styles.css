@@ -7,7 +7,7 @@ body{
     font-weight: 400;
     line-height: 1.5;
     color: #b9fc7b;
-    text-align: left;
+    /* text-align: left; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,14 +15,31 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-.container{
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.h1{
+    font-size: 2.5rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b9fc7b;
+    text-align: left;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-
+.h2{
+    font-size: 2rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #b9fc7b;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 .navbar-header{
     
     display: flex;
@@ -59,21 +76,36 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* .sobre-mim{ */
-    /* display: flex;
-    border-radius: 6%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    /* gap: 45px; */
+.sobre-mim{ 
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    border-radius: 39%;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: center; */
+    /* gap: 45px;
     /* width: 500px;
     height: 250px; */
     /* ROXINHO MANEIRO */
     /* background-color: rgb(53, 53, 122);  */
-    /* background-color: rgb(68, 83, 94); */
-    /* margin: 0; */
-    /* padding: 0 ; */
-    /* box-sizing: border-box; */
-    /* -webkit-font-smoothing: antialiased; */
-    /* -moz-osx-font-smoothing: grayscale; */
-/* } */
+    background-color: rgba(39, 39, 102, 0.1);
+    gap: 25px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.sobre-mim h2{
+    align-self: center;
+}
+.texto-div{
+    width: 50%;
+    align-content: center;
+    align-self: center;
+}
+.imagem-div{
+    justify-content: end;
+}
