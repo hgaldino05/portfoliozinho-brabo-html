@@ -82,6 +82,10 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+.button-nav:hover {
+    color: white; /* Altere para a cor desejada */
+}
+
 .link-externo{
     /* text-decoration: none; */
     color: #ffffff;
