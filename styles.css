@@ -1,8 +1,11 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+}
 body{
     /* ROXINHO MANEIRO  */
     background-color: rgb(7, 7, 19);
     /* background-color: rgb(48, 56, 65); */
-    font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -15,8 +18,9 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Configuracoes dos h1 */
 .h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: Outfit, sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -24,12 +28,13 @@ body{
     text-align: left;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Configuracoes dos h2 */
 .h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: Outfit, sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -40,8 +45,9 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Configuracoes do nav do header */
 .navbar-header{
-    
     display: flex;
     text-align: center;
     align-items: center;
@@ -54,14 +60,13 @@ body{
     /* background-color: rgb(68, 83, 94); */
     margin: 0;
     padding: 0 ;
-    box-sizing: border-box;
+    position: fixed;
+    /* box-sizing: border-box; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* .navbar-header a{
-    width: 150px;
-} */
+/* Configuracoes dos "botoes" da navbar  */
 .button-nav{
     font-size: 22px;
     font-family: Outfit, sans-serif;
@@ -72,40 +77,71 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.sobre-mim{ 
-    align-self: center;
-    width: 80%;
-    height: 80%;
-    display: flex;
-    border-radius: 39%;
-    flex-direction: row;
-    align-items: flex-start;
-    /* justify-content: center; */
-    /* gap: 45px;
-    /* width: 500px;
-    height: 250px; */
-    /* ROXINHO MANEIRO */
-    /* background-color: rgb(53, 53, 122);  */
-    background-color: rgba(39, 39, 102, 0.1);
-    gap: 25px;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
+.link-externo{
+    /* text-decoration: none; */
+    color: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.sobre-mim h2{
-    align-self: center;
+/* Configuracoes da linha que divide as sections */
+.linha-separa{
+    width: 85%;
+    height: 3px;
+    border: 0;
+    border-radius: 95%;
+    color: #b9fc7b;
+    background-color: #b9fc7b;
 }
+
+ /* Configuracoes dos textos das divs */
 .texto-div{
-    width: 50%;
+    width: 70%;
+    height: 85%;
     align-content: center;
     align-self: center;
+    background-color: rgba(39, 39, 102, 0.4);
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 19px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+/* Configuracoes das imagens das divs */
 .imagem-div{
     justify-content: end;
+}
+
+/* Configuracoes das sections */
+.sections{ 
+    align-self: center;
+    width: 85%;
+    height: 85%;
+    display: flex;
+    border-radius: 39%;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin: auto;
+    padding: 55px;
+    /* box-sizing: border-box; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Configuracoes da section inicio */
+.inicio{
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#skills h2{
+    color: #ffffff;
 }
