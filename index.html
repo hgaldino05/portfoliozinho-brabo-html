@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles.css">
+        <link id="myStylesheet" rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Henrique Galdino</title>
@@ -18,10 +18,22 @@
 
     <body class>
 
+        <!-- ALTERNAR MODO CLARO/MODO ESCURO -->
+        <script>
+            function changeStylesheet() {
+                var stylesheet = document.getElementById('myStylesheet');
+                if (stylesheet.href.endsWith('styles.css')) {
+                    stylesheet.href = 'styles2.css';
+                } else {
+                    stylesheet.href = 'styles.css';
+                }
+            }
+        </script>
+        
         <!-- HEADER -->
         <header>
             <nav class="navbar-header">
-                <a href="#inicio" class="button-nav">
+                <a href="#inicio" onclick="changeStylesheet()" class="button-nav">
                     <img src="assets/the-owl.png" height="80" width="80">
                 </a> 
                 <a href="#inicio" class="button-nav"><h1>Henrique Galdino</h1></a>
