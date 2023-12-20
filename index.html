@@ -1,168 +1,235 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
-        <link id="myStylesheet" rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Henrique Galdino</title>
-       
-    </head>
+    <link id="myStylesheet" rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Henrique Galdino</title>
+  </head>
 
-    <body class>
+  <body class>
+    <!-- ALTERNAR MODO CLARO/MODO ESCURO -->
+    <script>
+      function changeStylesheet() {
+        var stylesheet = document.getElementById("myStylesheet");
+        if (stylesheet.href.endsWith("styles.css")) {
+          stylesheet.href = "styles2.css";
+        } else {
+          stylesheet.href = "styles.css";
+        }
+      }
+    </script>
 
-        <!-- ALTERNAR MODO CLARO/MODO ESCURO -->
-        <script>
-            function changeStylesheet() {
-                var stylesheet = document.getElementById('myStylesheet');
-                if (stylesheet.href.endsWith('styles.css')) {
-                    stylesheet.href = 'styles2.css';
-                } else {
-                    stylesheet.href = 'styles.css';
-                }
-            }
-        </script>
-        
-        <!-- HEADER -->
-        <header>
-            <nav class="navbar-header">
-                <a href="#inicio" onclick="changeStylesheet()" class="button-nav">
-                    <img src="assets/the-owl.png" height="80" width="80">
-                </a> 
-                <a href="#inicio" class="button-nav"><h1>Henrique Galdino</h1></a>
-                <a href="#sobre-mim"  class="button-nav"><h4>Sobre mim</h4></a>
-                <a href="#skills" class="button-nav"><h4>Habilidades</h4></a>
-                <a href="#projetos"  class="button-nav"><h4>Projetos</h4></a>
-                <a href="#contatos" class="button-nav"><h4>Contatos</h4></a>
-            </nav>
-        </header>
-    
-        <!-- INICIO -->
-    
-        <section id = "inicio" class = "inicio">
-            <div> <img src = "assets/fotinha.png" height="370" width="370"></div>
-            <div class="texto-div">
-                <h1 class="h1">HENRIQUE GALDINO</h1>
-                <h2 class="h2">Estudante de Engenharia de Software</h2>
-                <h3>Brasília, DF</h3>
-        </section>
-        
-        
-        <!-- SOBRE MIM  -->
-        <hr class="linha-separa">
+    <!-- HEADER -->
+    <header>
+      <nav class="navbar-header">
+        <a href="#inicio" onclick="changeStylesheet()" class="button-nav">
+          <img src="assets/the-owl.png" height="80" width="80" />
+        </a>
+        <a href="#inicio" class="button-nav"><h1>Henrique Galdino</h1></a>
+        <a href="#sobre-mim" class="button-nav"><h4>Sobre mim</h4></a>
+        <a href="#skills" class="button-nav"><h4>Habilidades</h4></a>
+        <a href="#projetos" class="button-nav"><h4>Projetos</h4></a>
+        <a href="#contatos" class="button-nav"><h4>Contatos</h4></a>
+      </nav>
+    </header>
 
-        <section id = "sobre-mim" class="sections">
-            <h1 class="h1">SOBRE MIM</h1>
-            <div class ="texto-div"> Me chamo Henrique Galdino, sou estudante de Engenharia de Software pela Universidade de Brasília (UnB), e atualmente sou estagiário da Telebras,
-                atuando dentro da Gerência de Manutenção de Planta. 
-                Fascinado por games, sempre tive em mente a ideia de trabalhar na área de tecnologia da informação, 
-                principalmente com o objetivo de desenvolver games e aplicações. 
-                Atualmente, estou estudando desenvolvimento web, com foco em front-end, frente que tenho interesse dentro da área de desenvolvimento de Software.
-            </div>
-            
-        <!-- THE OWL  -->
-            <div> 
-                <img src="assets/the-owl.png" >
-            </div>
-            <h2 class="h2">THE OWL</h2>
-            <div class ="texto-div">  Embora não seja uma marca registrada, criei para mim um "logo", The Owl (A coruja, em inglês), 
-                o qual utilizo em meus projetos pessoais, com o objetivo de dar uma identidade menos "casual" e um pouco mais "profissional" aos meus projetos.
-            </div>
-        </section>
-        <hr class="linha-separa">
-        
-        <!-- SKILLS  -->
-        
-        
-        <section id ="skills" class = "sections">
-            <h1 class="h1">HABILIDADES</h1>
-            <div class ="texto-div">
-                <h2 class="h2">HARD SKILLS</h2>
-                    <ul>
-                        <li><h3> Desenvolvimento de Software:</h3></li>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                                <li>React</li>
-                                <li>Git</li>
-                                <li>Java</li>
-                                <li>Python</li>
-                                <li>Scrum</li>
-                                <li>Metodologias Ágeis</li>
-                            </ul>
-                        <li><h3> Ferramentas:</h3></li>
-                            <ul>
-                                <li>Canva</li>
-                                <li>Pacote Office - Word, PowerPoint, Excel</li>
-                            </ul>
-                        <li><h3> Idiomas:</h3></li>
-                            <ul>
-                                <li>Inglês - Fluente (Curso Master - Cultura Inglesa)</li>
-                                <li>Espanhol - Básico</li>
-                            </ul>
-                    </ul>
-                    <h2 class="h2">SOFT SKILLS</h2>
-                    <ul>
-                        <li>Busco sempre motivar equipes/colegas</li>
-                        <li>Busco sempre saber como estão as pessoas e se posso ajudá-las de alguma maneira</li>
-                        <li>Muito comunicativo, sempre buscando estar a par das informações relevantes para os objetivos almejados  </li>
-                        <li>Acredito que um clima leve e descontraído motiva as pessoas a alcançarem os melhores resultados</li>
-                        <li>Utilizo muito da minha criatividade para encontrar soluções para problemas/cenários, inclusive para os mais desafiadores</li>
-                    </ul>
-            </div>
-        </section>
-        <hr class="linha-separa">
-        
-        <!-- PROJETOS  -->
-        
-        
-        <section id ="projetos" class = "sections">
-            <h1 class="h1">PROJETOS</h1>
-            <div> <img src="assets/ticontrola.png" ></div>
-            <div class ="texto-div"> O projeto TiControla é uma aplicação de controle financeiro e gastos pessoais desenvolvida junto com colegas
-                para disciplina de Métodos de Desenvolvimento de Software. Contribui para o desenvolvimento da mesma utilizando JavaScript e TypeScript para 
-                a criação do front-end da aplicação. Acesse <span><a href="https://github.com/fga-eps-mds/2022-1-TiControla-FrontEnd" target="_blank" class="link-externo">aqui</a></span> o repositório do projeto.
-            </div>
-        </section>
-        <hr class="linha-separa">
-        
-        <!-- CONTATOS  -->
-        
-        
-        <section id ="contatos" class = "sections">
-            <h1 class="h1">CONTATOS</h1>
-            <div class ="texto-div">
-                <h2 class="h2">FALE COMIGO ATRAVÉS DE:</h2>
-                    <ul>
-                        <li><h3>Emails</h3></li>
-                            <ul>
-                                <li><a href="mailto:hgaldino05@gmail.com" class="button-nav">hgaldino05@gmail.com (Pessoal)</a></li>
-                                <li><a href="mailto:theowl.brasil@gmail.com" class="button-nav">theowl.brasil@gmail.com</a></li>
-                            </ul>
-                        
-                            <li><h3>Telefone</h3></li>
-                            <ul>
-                                <li><a href="https://wa.me/5561983066542" class="button-nav">(61) 98306-6542 (Whatsapp)</a></li>
-                            </ul>
-                    
-                        <li><h3>Redes Sociais</h3></li>
-                            <ul>
-                                <li><a href="https://www.linkedin.com/in/henrique-galdino-couto-696294279/" target="_blank" class="button-nav"> LinkedIn</a></li>
-                                <li><a href="https://github.com/hgaldino05" target="_blank" class="button-nav"> GitHub</a></li>
-                                <li><a href="https://www.instagram.com/henrique_galdino05/" target="_blank" class="button-nav"> Instagram</a></li>
-                            </ul>
-                    </ul>
-            </div>
-        </section>
-        
-    </body>
-    </html>
+    <!-- INICIO -->
+
+    <section id="inicio" class="inicio">
+      <div><img src="assets/fotinha.png" height="370" width="370" /></div>
+      <div class="texto-div">
+        <h1 class="h1">HENRIQUE GALDINO</h1>
+        <h2 class="h2">Estudante de Engenharia de Software</h2>
+        <h3>Brasília, DF</h3>
+      </div>
+    </section>
+
+    <!-- SOBRE MIM  -->
+    <hr class="linha-separa" />
+
+    <section id="sobre-mim" class="sections">
+      <h1 class="h1">SOBRE MIM</h1>
+      <div class="texto-div">
+        Me chamo Henrique Galdino, sou estudante de Engenharia de Software pela
+        Universidade de Brasília (UnB), e atualmente sou estagiário da Telebras,
+        atuando dentro da Gerência de Manutenção de Planta. Fascinado por games,
+        sempre tive em mente a ideia de trabalhar na área de tecnologia da
+        informação, principalmente com o objetivo de desenvolver games e
+        aplicações. Atualmente, estou estudando desenvolvimento web, com foco em
+        front-end, frente que tenho interesse dentro da área de desenvolvimento
+        de Software.
+      </div>
+
+      <!-- THE OWL  -->
+      <div>
+        <img src="assets/the-owl.png" />
+      </div>
+      <h2 class="h2">THE OWL</h2>
+      <div class="texto-div">
+        Embora não seja uma marca registrada, criei para mim um "logo", The Owl
+        (A coruja, em inglês), o qual utilizo em meus projetos pessoais, com o
+        objetivo de dar uma identidade menos "casual" e um pouco mais
+        "profissional" aos meus projetos.
+      </div>
+    </section>
+    <hr class="linha-separa" />
+
+    <!-- SKILLS  -->
+
+    <section id="skills" class="sections">
+      <h1 class="h1">HABILIDADES</h1>
+      <div class="texto-div">
+        <h2 class="h2">HARD SKILLS</h2>
+        <ul>
+          <li><h3>Desenvolvimento de Software:</h3></li>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Git</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Scrum</li>
+            <li>Metodologias Ágeis</li>
+          </ul>
+          <li><h3>Ferramentas:</h3></li>
+          <ul>
+            <li>Canva</li>
+            <li>Pacote Office - Word, PowerPoint, Excel</li>
+          </ul>
+          <li><h3>Idiomas:</h3></li>
+          <ul>
+            <li>Inglês - Fluente (Curso Master - Cultura Inglesa)</li>
+            <li>Espanhol - Básico</li>
+          </ul>
+        </ul>
+        <h2 class="h2">SOFT SKILLS</h2>
+        <ul>
+          <li>Busco sempre motivar equipes/colegas</li>
+          <li>
+            Busco sempre saber como estão as pessoas e se posso ajudá-las de
+            alguma maneira
+          </li>
+          <li>
+            Muito comunicativo, sempre buscando estar a par das informações
+            relevantes para os objetivos almejados
+          </li>
+          <li>
+            Acredito que um clima leve e descontraído motiva as pessoas a
+            alcançarem os melhores resultados
+          </li>
+          <li>
+            Utilizo muito da minha criatividade para encontrar soluções para
+            problemas/cenários, inclusive para os mais desafiadores
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="linha-separa" />
+
+    <!-- PROJETOS  -->
+
+    <section id="projetos" class="sections">
+      <h1 class="h1">PROJETOS</h1>
+      <div><img src="assets/ticontrola.png" /></div>
+      <div class="texto-div">
+        O projeto TiControla é uma aplicação de controle financeiro e gastos
+        pessoais desenvolvida junto com colegas para disciplina de Métodos de
+        Desenvolvimento de Software. Contribui para o desenvolvimento da mesma
+        utilizando JavaScript e TypeScript para a criação do front-end da
+        aplicação. Acesse
+        <span
+          ><a
+            href="https://github.com/fga-eps-mds/2022-1-TiControla-FrontEnd"
+            target="_blank"
+            class="link-externo"
+            >aqui</a
+          ></span
+        >
+        o repositório do projeto.
+      </div>
+    </section>
+    <hr class="linha-separa" />
+
+    <!-- CONTATOS  -->
+
+    <section id="contatos" class="sections">
+      <h1 class="h1">CONTATOS</h1>
+      <div class="texto-div">
+        <h2 class="h2">FALE COMIGO ATRAVÉS DE:</h2>
+        <ul>
+          <li><h3>Emails</h3></li>
+          <ul>
+            <li>
+              <a href="mailto:hgaldino05@gmail.com" class="button-nav"
+                >hgaldino05@gmail.com (Pessoal)</a
+              >
+            </li>
+            <li>
+              <a href="mailto:theowl.brasil@gmail.com" class="button-nav"
+                >theowl.brasil@gmail.com</a
+              >
+            </li>
+          </ul>
+
+          <li><h3>Telefone</h3></li>
+          <ul>
+            <li>
+              <a href="https://wa.me/5561983066542" class="button-nav"
+                >(61) 98306-6542 (Whatsapp)</a
+              >
+            </li>
+          </ul>
+
+          <li><h3>Redes Sociais</h3></li>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/henrique-galdino-couto-696294279/"
+                target="_blank"
+                class="button-nav"
+              >
+                LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/hgaldino05"
+                target="_blank"
+                class="button-nav"
+              >
+                GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/henrique_galdino05/"
+                target="_blank"
+                class="button-nav"
+              >
+                Instagram</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
